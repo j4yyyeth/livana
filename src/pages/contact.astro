@@ -684,11 +684,12 @@
       submitButton.disabled = true;
       submitButton.textContent = 'Sending...';
       
-      // Create FormData object
+      // Create FormData object and add form-name for Netlify
       const formData = new FormData(form);
+      formData.append('form-name', 'contact');
       
-      // Submit form using fetch
-      fetch('/', {
+      // Submit form using fetch with proper Netlify endpoint
+      fetch('/contact', {
         method: 'POST',
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: new URLSearchParams(formData).toString()
