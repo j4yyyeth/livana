@@ -69,7 +69,7 @@
         </div>
 
         <div class="contact-form-container">
-          <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/contact">
             <!-- Hidden fields for Netlify -->
             <input type="hidden" name="subject" value="New inquiry from Livana website (%{formName})" />
             <div style="display: none;">
@@ -678,13 +678,23 @@
     const submitButton = form.querySelector('.submit-button');
     
     form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent default form submission
+      
       // Disable submit button to prevent multiple submissions
       submitButton.disabled = true;
       submitButton.textContent = 'Sending...';
       
-      // Set a timeout to show success message if form submits successfully
-      setTimeout(() => {
-        // Replace form with success message after submission
+      // Create FormData object
+      const formData = new FormData(form);
+      
+      // Submit form using fetch
+      fetch('/', {
+        method: 'POST',
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(() => {
+        // Show success message
         const formContainer = document.querySelector('.contact-form-container');
         formContainer.innerHTML = `
           <div class="contact-form" style="text-align: center; padding: 4rem 3rem;">
@@ -695,7 +705,13 @@
             <a href="/contact" style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #6b5b95, #8b7faa); color: white; text-decoration: none; border-radius: 10px; font-weight: 400; letter-spacing: 1px;">Send Another Message</a>
           </div>
         `;
-      }, 1000);
+      })
+      .catch((error) => {
+        // Reset button on error
+        submitButton.disabled = false;
+        submitButton.textContent = 'Send Message';
+        alert('There was an error sending your message. Please try again.');
+      });
     });
   });
 </script>
