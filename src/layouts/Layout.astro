@@ -380,10 +380,15 @@ const { title } = Astro.props;
     align-items: start;
   }
 
+  .pro-space {
+	padding-top: 3rem;
+  }
+
   .about-container.professional {
-    grid-template-columns: 400px 1fr;
-    gap: 4rem;
-    align-items: start;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
   }
 
   .about-content {
@@ -437,13 +442,15 @@ const { title } = Astro.props;
   }
 
   .about-image.professional {
-    height: 500px;
-    width: 400px;
+    height: 450px;
+    width: 100%;
     display: block;
     border-radius: 10px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
     opacity: 0;
     animation: fadeInUp 0.8s ease forwards 0.3s;
+    margin: 0 auto;
+    order: -1; /* This puts the image above the text */
   }
 
   .about-photo {
@@ -1065,7 +1072,7 @@ const { title } = Astro.props;
       text-align: center;
     }
 
-    .about-container.professional {
+	.about-container.professional {
       grid-template-columns: 1fr;
       gap: 2rem;
       text-align: center;
@@ -1084,7 +1091,7 @@ const { title } = Astro.props;
       order: -1;
     }
 
-    .about-image.professional {
+	.about-image.professional {
       order: -1;
       width: auto;
       height: auto;
