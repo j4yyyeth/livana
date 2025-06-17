@@ -55,11 +55,11 @@
           <div class="contact-info">
             <div class="contact-item">
               <h3>Email</h3>
-              <p>livana@livanasouldoula.com</p>
+              <p><a href="mailto:livana@livanasouldoula.com" class="contact-link">livana@livanasouldoula.com</a></p>
             </div>
             <div class="contact-item">
               <h3>Phone</h3>
-              <p>+1 (404) 617-5386</p>
+              <p><a href="tel:+14046175386" class="contact-link">+1 (404) 617-5386</a></p>
             </div>
             <div class="contact-item">
               <h3>Response Time</h3>
@@ -138,8 +138,8 @@
 
         <div class="footer-column footer-contact">
           <h3>Contact</h3>
-          <p>livana@livanasouldoula.com</p>
-          <p>+1 (404) 617-5386</p>
+          <p><a href="mailto:livana@livanasouldoula.com" class="contact-link">livana@livanasouldoula.com</a></p>
+          <p><a href="tel:+14046175386" class="contact-link">+1 (404) 617-5386</a></p>
         </div>
 
         <div class="footer-column">
@@ -341,9 +341,41 @@
 
   .contact-item p {
     font-size: 1rem;
-    color: #666;
+    color: #ccc;
     font-weight: 300;
   }
+
+  .contact-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+  }
+
+  .contact-link:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  /*  */
+  .contact-content .contact-link {
+    color: #666;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+  }
+
+  .contact-content p {
+    color: #666;
+  }
+
+  .contact-content .contact-link:hover {
+    color: #4a4a6a;
+    text-decoration: underline;
+  }
+  /*  */
 
   /* Contact Form */
   .contact-form-container {

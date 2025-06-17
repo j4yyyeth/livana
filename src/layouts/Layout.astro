@@ -879,6 +879,19 @@ const { title } = Astro.props;
     font-weight: 300;
   }
 
+  .contact-link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 300;
+    transition: color 0.3s ease;
+  }
+
+  .contact-link:hover {
+    color: white;
+    text-decoration: underline;
+  }
+
   .footer-links {
     list-style: none;
   }
@@ -1099,19 +1112,29 @@ const { title } = Astro.props;
     }
 
     .testimonials-section {
-      padding: 4rem 1rem;
+      padding: 4rem 1rem 2rem 1rem;
     }
 
     .testimonial-carousel {
-      height: 500px;
-      padding: 2rem 0;
+      height: auto;
+      min-height: 350px;
+      padding: 2rem 0 1rem 0;
     }
 
     .testimonial-card {
       padding: 2rem 1.5rem;
       max-width: calc(100% - 2rem);
       margin: 0 1rem;
-      position: absolute;
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+
+    .testimonial-card.active {
+      transform: none;
     }
 
     .testimonial-text {
@@ -1120,6 +1143,11 @@ const { title } = Astro.props;
 
     .carousel-nav {
       display: none;
+    }
+
+    .carousel-dots {
+      margin-top: 1.5rem;
+      margin-bottom: 0;
     }
 
     .services-offered-title {
@@ -1209,7 +1237,7 @@ const { title } = Astro.props;
       padding: 1.5rem 1rem;
       margin: 0 0.5rem;
       max-width: calc(100% - 1rem);
-      position: absolute;
+      max-height: 280px;
     }
 
     .carousel-nav {
