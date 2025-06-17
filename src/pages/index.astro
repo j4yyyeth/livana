@@ -266,70 +266,109 @@ import Layout from '../layouts/Layout.astro';
   <section class="services-offered-section" id="offerings">
     <div class="services-offered-container">
       <h2 class="services-offered-title">Offerings</h2>
+      <p class="services-offered-subtitle">Sacred spaces for healing, connection, and transformation</p>
 
-      <div class="pricing-grid">
-        <div class="pricing-card">
-          <div class="pricing-card-symbol">✧</div>
-          <h3 class="pricing-card-title">1:1 Soul Doula Session</h3>
-          <p class="pricing-card-subtitle">
-            A sacred space to come home to yourself.
-          </p>
-          <p class="pricing-card-description">
-            These personalized, in-person sessions support you through whatever
-            you're carrying — grief, anxiety, burnout, or the longing for deeper
-            connection. I hold space with presence and care, blending modalities
-            such as:
-          </p>
-          <ul class="pricing-card-features">
-            <li>Intuitive coaching & talk-based integration</li>
-            <li>Sound healing</li>
-            <li>Cold immersion (when appropriate)</li>
-            <li>
-              Ceremonial Hapé (a grounding, non-psychoactive plant medicine)
-            </li>
-          </ul>
-          <p class="pricing-card-description">
-            Each session meets you where you are — gently guiding you back to
-            your body, your truth, your light.
-          </p>
-          <div class="pricing-card-price">✧ 60 minutes | $200</div>
-          <div class="pricing-card-price">
-            ✧ Deep Session (90 minutes) | $250
+      <!-- Featured Core Offerings -->
+      <div class="featured-offerings">
+        <div class="offering-card featured">
+          <div class="offering-header">
+            <div class="offering-symbol">✧</div>
+            <div class="offering-badge">Most Popular</div>
           </div>
-          <div class="pricing-card-note">Available in person only</div>
+          <h3 class="offering-title">1:1 Soul Doula Session</h3>
+          <p class="offering-subtitle">A sacred space to come home to yourself</p>
+          <p class="offering-description">
+            These personalized sessions weave together talk therapy, intuitive coaching, and integration work. You'll be gently met exactly where you are and guided back to your body, your truth, and your inner light.
+          </p>
+          <div class="offering-pricing">
+            <div class="price-option">
+              <span class="duration">60 minutes</span>
+              <span class="price">$200</span>
+            </div>
+            <div class="price-option">
+              <span class="duration">90 minutes</span>
+              <span class="price">$250</span>
+            </div>
+          </div>
         </div>
 
-        <div class="pricing-card">
-          <div class="pricing-card-symbol">✧</div>
-          <h3 class="pricing-card-title">Monthly Women's Hapé Ceremony</h3>
-          <p class="pricing-card-subtitle">Ritual. Reverence. Reconnection.</p>
-          <p class="pricing-card-description">
-            This sacred, free container is held specifically for Jewish women to
-            come together in sisterhood — to connect deeply with one another and
-            their inner selves. Through shared ritual and ceremonial Hapé, we
-            create a nurturing space to release, receive, and remember.
+        <div class="offering-card featured">
+          <div class="offering-header">
+            <div class="offering-symbol">✧</div>
+          </div>
+          <h3 class="offering-title">Couples Soul Doula Session</h3>
+          <p class="offering-subtitle">Reconnect, repair, and remember your bond</p>
+          <p class="offering-description">
+            For couples navigating disconnection or yearning to deepen intimacy. Through honest dialogue and embodied presence, we explore what's ready to be seen and held.
           </p>
-          <p class="pricing-card-description">Each gathering includes:</p>
-          <ul class="pricing-card-features">
-            <li>Opening meditation & intention setting</li>
-            <li>Ceremonial Hapé offering</li>
-            <li>Sharing circle in sacred witness</li>
-            <li>Gentle sound healing & integration</li>
-          </ul>
-          <p class="pricing-card-description" style="margin-top: 1rem;">
-            <strong
-              >Free of charge | Pre-registration required | Limited space
-              available</strong
-            >
+          <div class="offering-pricing">
+            <div class="price-option">
+              <span class="duration">60 minutes</span>
+              <span class="price">$250</span>
+            </div>
+            <div class="price-option">
+              <span class="duration">90 minutes</span>
+              <span class="price">$300</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sacred Plant Medicine Offerings -->
+      <div class="offerings-section-header">
+        <h3 class="section-title">Sacred Plant Medicine Sessions</h3>
+        <p class="section-description">Hapé ceremonies for grounding, clarity, and energetic cleansing</p>
+      </div>
+
+      <div class="standard-offerings">
+        <div class="offering-card">
+          <div class="offering-symbol">✧</div>
+          <h3 class="offering-title">Individual Hapé Session</h3>
+          <p class="offering-subtitle">Ground, clear, and realign your energy</p>
+          <p class="offering-description">
+            A traditional, non-psychoactive plant medicine session that promotes mental clarity and energetic cleansing through breath and integration work.
           </p>
-          <p class="pricing-card-description">
-            Held with love and reverence at the <a
-              href="https://www.thehouseofmore.com/"
-              target="_blank"
-              class="house-of-more-link">House of More</a
-            >, these monthly ceremonies invite deep grounding, clarity, and
-            soulful connection.
+          <div class="offering-pricing">
+            <div class="price-option">
+              <span class="duration">60 minutes</span>
+              <span class="price">$250</span>
+            </div>
+            <div class="price-option">
+              <span class="duration">90 minutes</span>
+              <span class="price">$300</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="offering-card">
+          <div class="offering-symbol">✧</div>
+          <h3 class="offering-title">Couples Hapé Session</h3>
+          <p class="offering-subtitle">Shared space for energetic alignment</p>
+          <p class="offering-description">
+            Experience plant medicine together to support emotional release and connection, helping you both reconnect with your bodies and hearts.
           </p>
+          <div class="offering-pricing">
+            <div class="price-option">
+              <span class="duration">60 minutes</span>
+              <span class="price">$300</span>
+            </div>
+            <div class="price-option">
+              <span class="duration">90 minutes</span>
+              <span class="price">$350</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="offering-card special">
+          <div class="offering-symbol">✧</div>
+          <h3 class="offering-title">Women's Hapé Ceremony</h3>
+          <p class="offering-subtitle">Ritual. Reverence. Reconnection.</p>
+          <p class="offering-description">
+            A sacred container for women to connect in sisterhood through ceremonial Hapé, meditation, sharing circle, and sound healing.
+          </p>
+          <div class="offering-contact">
+            <span class="contact-note">Contact for personalized quote</span>
+          </div>
         </div>
       </div>
     </div>
