@@ -16,19 +16,32 @@ const { title, description } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-	<meta property="og:title" content={title} />
-	<meta property="og:description" content={description} />
-	<meta property="og:image" content='/og.jpg' />
-	<meta property="og:image:alt" content={title} />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content='https://livanasouldoula.com/' />
-	<meta property="og:site_name" content={title} />
-	<meta name="twitter:card" content={title} />
-	<meta name="twitter:title" content={title} />
-	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image" content='/og.jpg' />
-	<meta name="twitter:image:alt" content={title} />
-  </head>
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/og.jpg" />
+    <meta property="og:image:alt" content={title} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://livanasouldoula.com/" />
+    <meta property="og:site_name" content={title} />
+    <meta name="twitter:card" content={title} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content="/og.jpg" />
+    <meta name="twitter:image:alt" content={title} />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N8R731S26Q"
+    ></script></head
+  >
+  <!-- Google tag (gtag.js) -->
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-N8R731S26Q');
+  </script>
   <body>
     <slot />
   </body>
@@ -394,7 +407,7 @@ const { title, description } = Astro.props;
   }
 
   .pro-space {
-	padding-top: 3rem;
+    padding-top: 3rem;
   }
 
   .about-container.professional {
@@ -658,7 +671,11 @@ const { title, description } = Astro.props;
   }
 
   .offering-card.featured {
-    background: linear-gradient(135deg, rgba(196, 165, 199, 0.1), rgba(166, 137, 170, 0.1));
+    background: linear-gradient(
+      135deg,
+      rgba(196, 165, 199, 0.1),
+      rgba(166, 137, 170, 0.1)
+    );
     border: 2px solid #c4a5c7;
     border-radius: 20px;
     padding: 3rem 2.5rem;
@@ -669,7 +686,7 @@ const { title, description } = Astro.props;
   }
 
   .offering-card.featured:hover {
-	transform: translateY(-5px);
+    transform: translateY(-5px);
     box-shadow: 0 25px 50px rgba(107, 91, 149, 0.15);
   }
 
@@ -730,9 +747,9 @@ const { title, description } = Astro.props;
     overflow: hidden;
   }
 
-.offering-card:hover::before {
-  opacity: 1;
-}
+  .offering-card:hover::before {
+    opacity: 1;
+  }
 
   .offering-card:hover {
     transform: translateY(-5px);
@@ -740,7 +757,11 @@ const { title, description } = Astro.props;
   }
 
   .offering-card.special {
-    background: linear-gradient(135deg, rgba(139, 127, 170, 0.05), rgba(107, 91, 149, 0.05));
+    background: linear-gradient(
+      135deg,
+      rgba(139, 127, 170, 0.05),
+      rgba(107, 91, 149, 0.05)
+    );
     border: 1px solid rgba(107, 91, 149, 0.2);
   }
 
@@ -811,7 +832,7 @@ const { title, description } = Astro.props;
     border-radius: 10px;
     border: 1px solid rgba(139, 127, 170, 0.2);
     text-align: center;
-	margin: 0 auto;
+    margin: 0 auto;
     width: 100%;
     display: block;
     text-decoration: none;
@@ -1142,7 +1163,7 @@ const { title, description } = Astro.props;
       text-align: center;
     }
 
-	.about-container.professional {
+    .about-container.professional {
       grid-template-columns: 1fr;
       gap: 2rem;
       text-align: center;
@@ -1161,7 +1182,7 @@ const { title, description } = Astro.props;
       order: -1;
     }
 
-	.about-image.professional {
+    .about-image.professional {
       order: -1;
       width: auto;
       height: auto;
@@ -1187,7 +1208,7 @@ const { title, description } = Astro.props;
       transform: translate(-50%, -50%);
       height: auto;
       min-height: 450px;
-	  max-height: unset;
+      max-height: unset;
       overflow-y: auto;
     }
 
