@@ -25,28 +25,28 @@ import Layout from "../layouts/Layout.astro";
       </div>
     </div>
 
-    <section class="contact-section">
+    <section class="contact-section animate-on-scroll">
       <div class="contact-container">
         <div class="contact-content">
-          <h2 class="contact-title">Let's Connect</h2>
-          <p class="contact-text">
+          <h2 class="contact-title animate-fade-up">Let's Connect</h2>
+          <p class="contact-text animate-fade-up" style="animation-delay: 0.1s;">
             I believe in the power of authentic connection. If something in my
             work resonates with you, if you have questions about my offerings,
             or if you're simply curious about what this journey might look like
             for you, I'd love to hear from you.
           </p>
-          <p class="contact-text">
+          <p class="contact-text animate-fade-up" style="animation-delay: 0.2s;">
             You don't have to have it all figured out to reach out. Sometimes
             the most profound transformations begin with a simple "I'm not sure
             what I need, but I know I need something different."
           </p>
-          <p class="contact-text">
+          <p class="contact-text animate-fade-up" style="animation-delay: 0.3s;">
             I respond to all messages personally and with care. Whether you're
             ready to book a session or just want to explore what might be
             possible, your message is welcome.
           </p>
 
-          <div class="contact-info">
+          <div class="contact-info animate-fade-up" style="animation-delay: 0.4s;">
             <div class="contact-item">
               <h3>Email</h3>
               <p><a href="mailto:livana@livanasouldoula.com" class="contact-link">livana@livanasouldoula.com</a></p>
@@ -62,7 +62,7 @@ import Layout from "../layouts/Layout.astro";
           </div>
         </div>
 
-        <div class="contact-form-container">
+        <div class="contact-form-container animate-fade-up" style="animation-delay: 0.2s;">
           <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
             <!-- Hidden fields for Netlify -->
             <input type="hidden" name="form-name" value="contact" />
@@ -71,19 +71,19 @@ import Layout from "../layouts/Layout.astro";
               <label>Don't fill this out if you're human: <input name="bot-field" /></label>
             </div>
             
-            <div class="form-group">
+            <div class="form-group animate-fade-up" style="animation-delay: 0.3s;">
               <label for="name">Name *</label>
               <input type="text" id="name" name="name" required />
             </div>
-            <div class="form-group">
+            <div class="form-group animate-fade-up" style="animation-delay: 0.4s;">
               <label for="email">Email *</label>
               <input type="email" id="email" name="email" required />
             </div>
-            <div class="form-group">
+            <div class="form-group animate-fade-up" style="animation-delay: 0.5s;">
               <label for="phone">Phone Number</label>
               <input type="tel" id="phone" name="phone" />
             </div>
-            <div class="form-group">
+            <div class="form-group animate-fade-up" style="animation-delay: 0.6s;">
               <label for="consultation">Are you interested in a free 20-minute consultation?</label>
               <select id="consultation" name="consultation">
                 <option value="">Please select</option>
@@ -92,7 +92,7 @@ import Layout from "../layouts/Layout.astro";
                 <option value="maybe">I'm not sure yet</option>
               </select>
             </div>
-            <div class="form-group">
+            <div class="form-group animate-fade-up" style="animation-delay: 0.7s;">
               <label for="message">Message *</label>
               <textarea
                 id="message"
@@ -102,50 +102,51 @@ import Layout from "../layouts/Layout.astro";
                 placeholder="I'd love to hear what brought you here today..."
               ></textarea>
             </div>
-            <button type="submit" class="submit-button">Send Message</button>
+            <button type="submit" class="submit-button animate-fade-up" style="animation-delay: 0.8s;">Send Message</button>
           </form>
         </div>
       </div>
     </section>
 
-    <section class="consultation-section">
+    <section class="consultation-section animate-on-scroll">
       <div class="consultation-container">
-        <h2 class="consultation-title">Free 20-Minute Consultation</h2>
-        <p class="consultation-text">
+        <h2 class="consultation-title animate-fade-up">Free 20-Minute Consultation</h2>
+        <p class="consultation-text animate-fade-up" style="animation-delay: 0.1s;">
           Not sure if we're a good fit? I offer a complimentary 20-minute
           consultation where we can connect, you can ask questions, and we can
           both feel into whether this work aligns with what you're seeking.
           There's no pressure—just presence and authentic conversation.
         </p>
-        <p class="consultation-text">
+        <p class="consultation-text animate-fade-up" style="animation-delay: 0.2s;">
           To schedule your free consultation, simply mention it in your message
           above, and I'll respond with available times that work for both of us.
         </p>
       </div>
     </section>
 
-    <footer class="footer-section">
+    <footer class="footer-section animate-on-scroll">
       <div class="footer-container">
-        <div class="footer-logo">
+        <div class="footer-logo animate-fade-up">
           <img src="/logo.svg" alt="Livana Logo" class="footer-logo-image" />
         </div>
 
-        <div class="footer-column footer-contact">
+        <div class="footer-column footer-contact animate-fade-up" style="animation-delay: 0.1s;">
           <h3>Contact</h3>
           <p><a href="mailto:livana@livanasouldoula.com" class="contact-link">livana@livanasouldoula.com</a></p>
           <p><a href="tel:+14046175386" class="contact-link">+1 (404) 617-5386</a></p>
         </div>
 
-        <div class="footer-column">
+        <div class="footer-column animate-fade-up" style="animation-delay: 0.2s;">
           <h3>Quick Links</h3>
           <ul class="footer-links">
             <li><a href="/#about">About</a></li>
             <li><a href="/#offerings">Offerings</a></li>
             <li><a href="/contact">Contact</a></li>
+            <li><a href="/disclaimer">Disclaimer</a></li>
           </ul>
         </div>
 
-        <div class="footer-message">
+        <div class="footer-message animate-fade-up" style="animation-delay: 0.3s;">
           <p class="footer-message-text">
             Walk confidently toward a more aligned and fulfilled life.
           </p>
@@ -171,6 +172,24 @@ import Layout from "../layouts/Layout.astro";
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  }
+
+  /* Animation Classes */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   .hero-section {
@@ -690,6 +709,26 @@ import Layout from "../layouts/Layout.astro";
 <script>
   // Add form submission handling
   document.addEventListener('DOMContentLoaded', function() {
+    // Intersection Observer for scroll animations
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -100px 0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all elements with animation classes
+    document.querySelectorAll('.animate-on-scroll, .animate-fade-up').forEach(el => {
+      observer.observe(el);
+    });
+
     const form = document.querySelector('.contact-form');
     const submitButton = form.querySelector('.submit-button');
     
